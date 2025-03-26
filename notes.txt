@@ -1,4 +1,6 @@
+##########
 CHAPTER 1
+##########
 
 go mod init hello_world to makr this directory as a go module
 a module is source code + exact spec of dependnices
@@ -12,7 +14,9 @@ go fmt ./... <-- fmt all the files in the current directory and subdirs, recursi
 standard format allows both avoid args and better tooling
 go requires ; at end of every statement, but never insert them yourself!
 
+##########
 CHAPTER 2
+##########
 
 go assigns a deafult zero value to any variable that's declared but not assigned a value
 "zero value for that type"
