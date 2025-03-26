@@ -1,0 +1,96 @@
+CHAPTER 1
+
+go mod init hello_world to makr this directory as a go module
+a module is source code + exact spec of dependnices
+every module has go.mod in its root
+don't edit directly
+
+all go programs start from main function in main package
+go build
+go build -o hello
+go fmt ./... <-- fmt all the files in the current directory and subdirs, recursively; used in other go tools
+standard format allows both avoid args and better tooling
+go requires ; at end of every statement, but never insert them yourself!
+
+CHAPTER 2
+
+go assigns a deafult zero value to any variable that's declared but not assigned a value
+"zero value for that type"
+
+CARD: zero values for various types
+
+literal: number, character, string
+
+integer literal
+0b10000
+0x10
+0o20
+0b1_000
+1.6e2
+0x1e1
+
+rune literal
+SINGLE QUOTES
+'a' '\141' '\x61'
+
+interpreted string literal
+zero or more rune literals
+you probably want this
+if you need to include special stuff use a raw string litral
+
+booleans
+var flag bool // no value assigned so set to false, i.e. zero value for bool is false
+int varies from platform to platform, e.g. typically 64 bit signed on 64 bit platform
+
+integer division is integer CARD
+integer division truncates towards 0 CARD
+
+some surprising
+
+don't compare floats using == and !=
+instead, check if they're within epsilon
+or better yet, use ints
+
+strings are immutable
+rune type represents single code point
+
+no automatic type promotion, even for e.g. int32 and int64
+no non-bools can be converted to bool implicitly or explicitly
+
+literals in go are untypes
+so `var x float64 = 10` is ok
+a literal can be assigned to any variable of compatible type
+
+default type of integer literal is int
+var x int = 0
+var x = 0
+var x int
+all assign x to 0 value
+
+when within a function, := can replace "var with type inference"
+
+CARD refactor: when to avoid :=
+
+constants give names to literals
+they can only hold values that the compiler can figure out at compile time
+even
+```
+x := 5
+y := 10
+const z = x + y
+```
+fails to compile!
+
+literals don't have intrinsic types
+so you can assign the same literal to variables of various types
+but they do have a default type, used when no other type can be inferred
+
+every declared local (not package) variable must be read, esle compile-time error
+
+go uses camelCase
+
+CARD: byte is alias for uint8
+
+CARD: max values for int types
+
+CARD: (u)int overflow
