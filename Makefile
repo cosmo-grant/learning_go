@@ -20,3 +20,6 @@ ex:
 	mkdir -p ${CHEX}
 	cd ${CHEX} && go mod init ${CHEX}
 	echo 'package main\n\nfunc main() {\n\n}\n' >${CHEX}/main.go
+
+play:
+	open http://go.dev/play
