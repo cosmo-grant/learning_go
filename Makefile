@@ -11,7 +11,7 @@ build: vet
 	cd ${CHEX} && go build
 
 run: build
-	cd ${CHEX} && ./main
+	cd ${CHEX} && go run main.go
 
 clean:
 	cd ${CHEX} && go clean
