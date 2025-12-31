@@ -1,2 +1,4 @@
-github.com/cosmo-grant/learning_go/ch10 v1.0.1 h1:jgMRKETON4Kime2nlg5B9+7G1f8j8WQLsVymX+E8+Ik=
-github.com/cosmo-grant/learning_go/ch10 v1.0.1/go.mod h1:Nn6/nTtiFq89+qjZr6/qc135qp1zeMjpIvYCBEPzTE0=
+github.com/cosmo-grant/learning_go/ch10/v2 v2.0.0-20251231183936-fce7da573606 h1:tboTfmAVuWrThdQkd1FBiiVM4eVYrLpNDB7YtzbvkJo=
+github.com/cosmo-grant/learning_go/ch10/v2 v2.0.0-20251231183936-fce7da573606/go.mod h1:5hPXTWZ80W2OxozXbBg0Hl24bcHFWBzVEwyTsouxiD8=
+golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93 h1:fQsdNF2N+/YewlRZiricy4P1iimyPKZ/xwniHj8Q2a0=
+golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93/go.mod h1:EPRbTFwzwjXj9NpYyyrvenVh9Y+GFeEvMNh7Xuz7xgU=
